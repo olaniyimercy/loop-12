@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
@@ -12,15 +11,15 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #2f2f2f;
-
+    font-family: sans-serif;
     overflow: hidden;
 }
 
 .background {
     background-color: yellow;
     width: 426px;
-    height: 590px;
-    padding: 3.5rem 0 0 1.5rem;
+    height: 640px;
+    padding: 3.5rem 2.5rem 0 2.5rem;
     position: relative;
     color: #b9b6b2;
 }
@@ -28,6 +27,18 @@ body {
 .header {
     font-size: 1.3rem;
     margin-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    color: #726b22;
+    font-weight: 600;
+}
+
+figure:hover {
+    color: #000;
+    cursor: pointer;
 }
 
 h4 {
@@ -40,12 +51,12 @@ img {
     border-radius: 50%;
     position: absolute;
     top: 6.5rem;
-    left: 5rem;
+    left: 6rem;
 }
 
 form {
     background-color: white;
-    width: 29rem;
+    width: 28.5rem;
     margin: 3rem 0 1rem 1.5rem;
     padding: 2rem;
 }
@@ -79,17 +90,25 @@ textarea {
     border: none;
     border-bottom: 1px solid #b9b6b2;
     padding-bottom: 1rem;
+    width: 100%;
+    outline: none;
+    font-family: sans-serif;
 }
 
 footer {
     margin-left: auto;
-    width: 10rem;
+    width: 8rem;
 }
 
 .option {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 2rem;
+    cursor: pointer;
+    color: #726b22;
+    font-weight: 600;
+}
+
+.option:hover {
     color: #000;
 }
